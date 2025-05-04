@@ -3,4 +3,4 @@
 # How can you fix the code below to successfully print "xerox"
 # to your console?
 
-print(xerox)
+print('xerox') #need to add quotations to specify what we're trying to print. Previously, it was trying to print a variable labeled "xerox".

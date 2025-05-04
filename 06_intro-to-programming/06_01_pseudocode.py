@@ -6,3 +6,8 @@
 # Break this task up into a couple of steps of pseudocode
 # and write the pseudocode below in code comments.
 # You don't need to write any functional code, just map out the steps.
+
+#list out the name of kittens
+#cuteness level
+#boolean - display yes/no if kitten is ready for adoption
+

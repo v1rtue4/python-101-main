@@ -3,6 +3,6 @@
 
 flag = False
 while flag:
-    # keep doing what you're doing
+    pass # keep doing what you're doing, used the pass to ignore line 6.
 
 print("all done.")

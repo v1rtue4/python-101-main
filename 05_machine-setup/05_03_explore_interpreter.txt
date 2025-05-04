@@ -2,8 +2,50 @@ Explore the interpreter:
 
 - Execute lines with syntax error and see what the response is.
   - What happens if you leave out a quotation or parenthesis?
+  
+  Traceback (most recent call last):
+  File "<python-input-0>", line 1, in <module>
+    print(hello)
+          ^^^^^
+NameError: name 'hello' is not defined. Did you mean: 'help'?"
+
+>>> print'hello'
+  File "<python-input-1>", line 1
+    print'hello'
+    ^^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+
+Syntax Error message can be extremely helpful to identify what could possible be wrong. 
+
   - How helpful are the error messages?
+I find this extremely helpful especially when it comes to more complicated lines of code. 
+I feel like this can help pin point any issues, however, it is still a good idea to research and look up any syntax errors to get a better understanding on what could be the main issue.
+
 
 - Use the `help()` function to explore what you can do with the interpreter.
   - For example execute `help('print')`.
   - Press `q` to exit.
+
+>>> help("print")
+Help on built-in function print in module builtins:
+
+print(*args, sep=' ', end='\n', file=None, flush=False)
+    Prints the values to a stream, or to sys.stdout by default.
+
+    sep
+      string inserted between values, default a space.
+    end
+      string appended after the last value, default a newline.
+    file
+      a file-like object (stream); defaults to the current sys.stdout.
+    flush
+      whether to forcibly flush the stream.
+
+>>> help("input")
+Help on method input in module _pyrepl.readline:
+
+input(prompt: 'object' = '') -> 'str' method of _pyrepl.readline._ReadlineWrapper instance
+
+
+I can see how the help() function can be useful as a quick reference or refresher for understanding how a function works or what arguments it takes.
+I also tried help("input") to learn more about how user input works in Python. The documentation explained that input() reads a line from standard input (like the keyboard) and returns it as a string. It also mentioned that you can provide an optional prompt string to display a message before waiting for input. This helped me understand how to use input() when writing interactive programs.
