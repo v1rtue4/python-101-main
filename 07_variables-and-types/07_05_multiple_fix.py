@@ -9,3 +9,7 @@ profession = "programming"
 
 print(dreams)
 print(profession)
+
+# Separated the variables to make the code easier to read and understand.
+# 'Dreams' and 'profession' are distinct concepts, so assigning them on separate lines
+# Avoids confusion and improves code clarity.

@@ -7,3 +7,7 @@ color = "red"
 year = 1990
 
 print(color, year)
+
+# Separated the variables to improve clarity and readability.
+# Avoided multiple assignment since 'color' and 'year' are unrelated values.
+# This makes the code easier to understand and follow, especially for beginners.
