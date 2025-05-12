@@ -20,7 +20,7 @@ births_per_year = seconds_per_year / birth_interval
 deahts_per_year = seconds_per_year / death_interval
 imigrants_per_year = seconds_per_year / imigration_interval
 
-# Calculate net change per year
+# Calculate net change per year=
 net_change_per_year = births_per_year - deahts_per_year + imigrants_per_year
 
 # Calculate population after 3 years
