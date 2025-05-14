@@ -10,3 +10,10 @@
 
 wrong = False
 right = True
+
+# Use all three logical operators in one line
+# Combining wrong, right, and using not to invert one of them
+result = (wrong and not wrong) or right
+
+# Display the result
+print(result)
