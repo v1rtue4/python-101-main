@@ -22,3 +22,10 @@
 # * * *
 #
 # HINT: Think of nested for loops!
+
+stars = 5
+
+for i in range(1, stars + 1):         # Outer loop, row number goes from 1 to 5
+    for j in range(i):                # Inner loop, stars per row
+        print("*", end=" ")           # Print a star with a space but on same line
+    print()                           # Line break after each row

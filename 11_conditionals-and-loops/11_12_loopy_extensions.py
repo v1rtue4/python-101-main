@@ -8,3 +8,22 @@
 # for example flags and conditional statements.
 
 filename = "operators.pdf"
+
+# Set a flag to track if it's a .pdf file.
+is_pdf = False
+
+# Loop through the filename
+for i in range(len(filename)):
+    # Look for start of the ".pdf" ending
+    if filename[i] == ".":
+
+        #Check if the next characters match "pdf"
+        if i + 3 < len(filename):
+            if (filename[i + 1] == "p" and # Check for pdf in specific file name.
+                filename[i + 2] == "d" and
+                filename[i + 3] == "f"):
+                is_pdf = True # when found .pdf ending
+
+# Display final result
+if is_pdf:
+    print("This is a PDF file.")

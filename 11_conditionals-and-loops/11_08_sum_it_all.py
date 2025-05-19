@@ -6,3 +6,12 @@
 
 start = 1
 stop = 100
+
+total = 0  # Start with zero
+
+# Loop from 1 to 100
+for number in range(start, stop + 1):
+    total += number  # Add current number to the total
+
+# After the loop, print the result
+print("The sum is:", total)

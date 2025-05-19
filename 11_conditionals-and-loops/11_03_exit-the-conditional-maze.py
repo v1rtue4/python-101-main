@@ -31,54 +31,69 @@
 # without changing the direction that you're looking.
 
 flag = True
+if flag == True: # Step 1. Move left from You. 
+    print("left") 
 
-if flag == True:
+flag = False
+if flag == False: # Step 2. Proceed straight.
+    print("straight ahead")
+
+flag = False # Do not execute print function.
+if flag == True: 
+    print("left") 
+
+flag = False
+if flag == False: # Step 3. Continue moving straight.
+    print("straight ahead")
+
+flag = False
+if flag == True: # Do not execute print function. Too many straights, will lead into wall.
+    print("straight ahead")
+
+flag = False
+if flag == True: # Do not execute print function. Too many straight, will lead into wall.
+    print("straight ahead")
+
+flag = False
+if flag == True: # Dead end, avoid. Take a right for next step.
+    print("DEAD END") 
+
+flag = False
+if flag == True: # Do not execute print function. Left would run into wall. 
     print("left")
 
-if flag == False:
-    print("straight ahead")
-
-if flag == True:
-    print("left")
-
-if flag == False:
-    print("straight ahead")
-
-if flag == True:
-    print("straight ahead")
-
-if flag == True:
-    print("straight ahead")
-
-if flag == True:
-    print("DEAD END")
-
-if flag == True:
-    print("left")
-
-if flag == False:
+flag = False  
+if flag == False: # Step 4. Take a right.
     print("right")
 
-if flag == True:
+flag = False 
+if flag == True: # Skip, would run into wall.
     print("straight ahead")
 
-if flag == False:
+flag = False  
+if flag == False: # Step 5. Proceed Straight towards exit of Maze. 
     print("straight ahead")
 
-if flag == False:
+flag = True
+if flag == False: # Deadend, avoiding.
     print("DEAD END")
 
+flag = True # Step 6. Take right, towards Exit.
 if flag == True:
     print("right")
 
+flag = True # Step 7. Proceed straight. 
 if flag == True:
     print("straight ahead")
 
+flag = False # Do not execute print function. Left would run into wall. 
 if flag == True:
     print("left")
 
+flag = False # Step 8. Print EXIT at the end
 if flag == False:
     print("EXIT!!")
 
+flag = False # Dead end, avoid. Maze completed.
 if flag == True:
     print("DEAD END")

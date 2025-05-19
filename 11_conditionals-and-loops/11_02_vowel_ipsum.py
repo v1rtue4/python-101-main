@@ -7,3 +7,15 @@ aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
 mollit anim id est laborum."""
+
+# Tracker for vowel, starting at zero
+vowel_count = 0
+
+# Loop through each character in lorem_ipsum
+for char in lorem_ipsum:
+    # check for vowels, aeiou
+    if char.lower() in "aeiou":
+        vowel_count += 1
+
+# Display final results
+print(vowel_count)
